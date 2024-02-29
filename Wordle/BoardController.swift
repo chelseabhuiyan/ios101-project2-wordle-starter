@@ -62,7 +62,10 @@ class BoardController: NSObject,
   // Checkpoint: Correctly implementing this should allow you to change the number of letters in the goal word!
   private func applyNumLettersSettings(with settings: [String: Any]) {
     // START YOUR CODE HERE
-    // ...
+      if let numLetters = settings[kNumLettersKey] as? Int {
+                 // Assumes that the value associated with kNumLettersKey is an Int
+                 numItemsPerRow = numLetters
+             }
     // END YOUR CODE HERE
   }
   
@@ -74,7 +77,10 @@ class BoardController: NSObject,
   // Checkpoint: Correctly implementing this should allow you to change the number of rows in the board!
   private func applyNumGuessesSettings(with settings: [String: Any]) {
     // START YOUR CODE HERE
-    // ...
+      if let numGuesses = settings[kNumGuessesKey] as? Int {
+                 // Assumes that the value associated with kNumGuessesKey is an Int
+                 numRows = numGuesses
+             }
     // END YOUR CODE HERE
   }
   
@@ -87,7 +93,10 @@ class BoardController: NSObject,
   // to check the before/after value of goalWord and see if it changes to the correct theme
   private func applyThemeSettings(with settings: [String: Any]) {
     // START YOUR CODE HERE
-    // ...
+      if let themeString = settings[kWordThemeKey] as? String,
+                 let theme = WordTheme(rawValue: themeString) {
+                  goalWord = WordGenerator.generateGoalWord(with: theme)
+              }
     // END YOUR CODE HERE
   }
   
@@ -97,7 +106,9 @@ class BoardController: NSObject,
   // Checkpoint: Correctly implementing this function should change the goal word each time the user inputs an entire row of letters
   private func applyIsAlienWordleSettings(with settings: [String: Any]) {
     // START YOUR CODE HERE
-    // ...
+      if let isAlienWordleValue = settings[kIsAlienWordleKey] as? Bool {
+                  isAlienWordle = isAlienWordleValue
+              }
     // START YOUR CODE HERE
   }
 }
