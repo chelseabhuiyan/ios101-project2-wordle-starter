@@ -2,9 +2,9 @@
 
 Submitted by: **Chelsea Bhuiyan**
 
-**Name of your app** is an app that ... [TODO] 
+**Name of your app** is an app the wordle app with features so that user can select the length of the goal word, how many guesses they get, select from theme of the words, and selct alien word which will change the word after each guess making the game harder. 
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
@@ -25,14 +25,11 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+https://www.loom.com/share/737cb5640a964e8ab7a8bfe561000b00?sid=fc027b94-b98c-45d9-aa9c-5bbf9761d8d5
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The steps were simple to follow.
 
 ## License
 
